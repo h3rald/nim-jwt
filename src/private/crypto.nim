@@ -14,7 +14,7 @@ export EVP_PKEY_RSA
 const
   HMAC_MAX_MD_CBLOCK* = 128
 
-const sslIsOld = libHasSymbol(libcrypto, "EVP_MD_CTX_create")
+const sslIsOld = true#libHasSymbol(libcrypto, "EVP_MD_CTX_create")
 
 type
   EVP_MD* = SslPtr
